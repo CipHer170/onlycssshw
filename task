@@ -1,0 +1,50 @@
+Homework Assignment: Animated Navigation Menu
+
+    Task 1: Animated Navigation Menu
+        Requirements:
+            3-5 menu links with smooth transitions
+            CSS transforms (not left/top positioning)
+            Hamburger menu that transforms to X
+            Staggered menu item animations
+
+    Task 2: Hover Effects for Buttons
+        Requirements:
+            3 Button Styles with distinct effects:
+            Button 1: Scale & Shadow Lift (grows on hover with shadow)
+            Button 2: Gradient Animation (background gradient slides)
+            Button 3: Border Glow Animation (border color + shadow glow)
+            Complete CSS Examples:
+            Scale and transform effects with cubic-bezier timing
+            Gradient animation with background-position
+            Glow effects with multiple box-shadows
+            Active and disabled states
+            Focus states for accessibility
+
+
+Homework Assignment: Interactive Forms & Parallax Scrolling
+
+    Task 1: Interactive Form Design
+        Requirements:
+            Build a form with at least four input fields (e.g., text, email, password, select).
+            Each field must change its appearance based on its state:
+            On focus: border color, shadow, or background changes.
+            On blur: validation feedback appears—success (valid) or error (invalid).
+            On valid input: show a green border/indicator and a “success” message.
+            On invalid input: show a red border/indicator and a descriptive error message.
+            Use smooth CSS transitions for all visual changes.
+            Use only CSS selectors (:focus, :valid, :invalid) and transition/animation properties. Minimal JS, only for custom validation if required.
+            All state changes must be visually clear and accessible.
+
+
+    Task 2: Parallax Scrolling Effect
+        Requirements:
+            Create a web page layout with at least two content sections and one visually distinct background.
+            Implement a CSS-based parallax effect so the background image moves slower than foreground content during scroll.
+            Do not use external JS libraries—focus on pure CSS approaches such as background-attachment: fixed, transform, or scroll-driven CSS animations.
+            Parallax effect should be smooth and noticeable, but not distracting. Page must work well on both desktop and mobile.
+            Provide fallback for reduced motion settings (@media (prefers-reduced-motion: reduce)).
+
+
+
+
+

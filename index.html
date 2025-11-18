@@ -14,9 +14,17 @@
     <div class="app">
         <div class="container">
             <div class="header">
-                <img src="./logo.png" alt="" class="logo_wide">
-                <h3 class="logo_title">Global Forum</h3>
-                <div class="faq">faq</div>
+                <div class="title">
+                    <img src="./logo.png" alt="" class="logo_wide">
+                    <h3 class="logo_title">Global Forum</h3>
+                    <div class="faq"><img src="./bars-solid-full.svg" alt=""></div>
+                </div>
+                <ul class="faq_menu">
+                    <li class="faq_menu_1">Button_1</li>
+                    <li class="faq_menu_2">Button_2</li>
+                    <li class="faq_menu_3">Button_3</li>
+                    <li class="faq_menu_4">Button_4</li>
+                </ul>
             </div>
             <div class="links">
                 <label for="showInvestorForm" class="showInvestorForm">
@@ -39,10 +47,16 @@
                 </div>
                 <label for="bookTitle"> bookTitle</label>
                 <input type="text" id="bookTitle" placeholder="bookTitle" />
+                <span class="success-message">Done</span>
+                <span class="error-message">Please enter correct email</span>
                 <label for="bookAuthor">bookAuthor </label>
                 <input type="text" id="bookAuthor" placeholder="bookAuthor" />
+                <span class="success-message">Done</span>
+                <span class="error-message">Please enter correct email</span>
                 <label for="bookRating"> bookRating</label>
                 <input type="number" max="5" min="1" id="bookRating" placeholder="bookRating" />
+                <span class="success-message">Done</span>
+                <span class="error-message">Please enter correct email</span>
                 <label for="bookGenreSelect"> bookGenreSelect</label>
                 <select name="bookGenreSelect" id="bookGenreSelect">
                     <option value="fanatsy">Fanatsy</option>
@@ -52,12 +66,12 @@
                     <option value="young_adult">Young Adult</option>
                     <option value="for_kids">For kids</option>
                 </select>
+                <span class="success-message">Done</span>
+                <span class="error-message">Please enter correct email</span>
                 <label for="bookComments">bookComments</label>
                 <textarea name="bookComments" id="bookComments" maxlength="100"></textarea>
                 <label for="bookFinishedDate">bookFinishedDate</label>
                 <input type="date" id="bookFinishedDate"></input>
-                <label for="bookImageUrl">bookImageUrl</label>
-                <input type="text" id="bookImageUrl"></input>
                 <button id="saveBookBtn" type="submit">Save Book</button>
             </form>
 
@@ -70,14 +84,20 @@
             <form action="">
                 <div class="title">
                     <h2>Registration for Investors</h2>
-                    <label for="closeForm" class="close_btn">close</label>
+                    <label for="closeForm" class="close_btn">Close</label>
                 </div>
                 <label for="bookTitle"> bookTitle</label>
                 <input type="text" id="bookTitle" placeholder="bookTitle" />
+                <span class="success-message">Done</span>
+                <span class="error-message">Please enter correct email</span>
                 <label for="bookAuthor">bookAuthor </label>
                 <input type="text" id="bookAuthor" placeholder="bookAuthor" />
+                <span class="success-message">Done</span>
+                <span class="error-message">Please enter correct email</span>
                 <label for="bookRating"> bookRating</label>
                 <input type="number" max="5" min="1" id="bookRating" placeholder="bookRating" />
+                <span class="success-message">Done</span>
+                <span class="error-message">Please enter correct email</span>
                 <label for="bookGenreSelect"> bookGenreSelect</label>
                 <select name="bookGenreSelect" id="bookGenreSelect">
                     <option value="fanatsy">Fanatsy</option>
@@ -87,12 +107,12 @@
                     <option value="young_adult">Young Adult</option>
                     <option value="for_kids">For kids</option>
                 </select>
+                <span class="success-message">Done</span>
+                <span class="error-message">Please enter correct email</span>
                 <label for="bookComments">bookComments</label>
                 <textarea name="bookComments" id="bookComments" maxlength="100"></textarea>
                 <label for="bookFinishedDate">bookFinishedDate</label>
                 <input type="date" id="bookFinishedDate"></input>
-                <label for="bookImageUrl">bookImageUrl</label>
-                <input type="text" id="bookImageUrl"></input>
                 <button id="saveBookBtn" type="submit">Save Book</button>
             </form>
 

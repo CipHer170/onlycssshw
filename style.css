@@ -10,7 +10,6 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     padding: 20px;
-    transition: 3s ease-in-out;
 }
 
 a {
@@ -21,25 +20,19 @@ a {
 }
 
 .container {
-    max-width: 600px;
-    margin: 0 auto;
-    border-radius: 15px;
     padding: 30px;
-    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 24px;
-    background-color: aliceblue;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
 }
 
 .header {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
-    gap: 24px;
+    gap: 300px;
 }
 
 .logo_wide {
@@ -47,6 +40,11 @@ a {
     height: auto;
     border-radius: 50%;
     color: #667eea;
+    transition: transform 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.logo_wide {
+    transform: scale(1.06);
 }
 
 .logo_title {
@@ -55,7 +53,7 @@ a {
     color: #333;
 }
 
-.faq {
+/* .faq {
     font-size: 1.2rem;
     color: #667eea;
     text-transform: uppercase;
@@ -66,6 +64,28 @@ a {
     text-decoration: underline;
     transition: 0.5s ease-in-out;
     scale: 1.2;
+} */
+.faq_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    gap: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+.faq_menu li:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: 0.5s ease-in-out;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.faq {
+    display: none;
 }
 
 .links {
@@ -96,7 +116,8 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: end;
+    align-items: center;
+    gap: 24px;
 }
 
 .title h2 {
@@ -197,6 +218,38 @@ button[type="submit"]:active {
     transform: translateY(0);
 }
 
+.success-message,
+.error-message {
+    display: none;
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: opacity 0.3s ease;
+}
+
+.success-message {
+    color: #28a745;
+    background-color: #f0fff4;
+}
+
+.error-message {
+    color: #dc3545;
+    background-color: #fff5f5;
+}
+
+input:valid:not(:placeholder-shown)~.success-message {
+    display: block;
+}
+
+input:invalid:not(:placeholder-shown):not(:focus)~.error-message {
+    display: block;
+}
+
+
+
+
 #showProjectForm,
 #showInvestorForm,
 #closeForm {
@@ -219,33 +272,80 @@ button[type="submit"]:active {
 .showInvestorForm:hover {
     box-shadow: 0px 0px 10px 3px #a0a0a0;
     border: none;
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
 }
 
 .showProjectForm:hover {
     background: linear-gradient(#6A00E6, #3E00B3);
-    border: none;
+    transition: 0.5s ease-in-out;
+    animation: firstAnimationBtn 2s;
 }
 
+
+@keyframes firstAnimationBtn {
+    0% {
+        border: 3px solid #f0f0f0;
+    }
+
+    100% {
+        border: 3px solid #667eea;
+    }
+}
+
+
+
+
 @media (max-width: 600px) {
+    .title {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+
+    .faq {
+        display: block;
+    }
+
+    .faq img {
+        width: 40px;
+        height: auto;
+        filter: invert(34%) sepia(76%) saturate(2643%) hue-rotate(219deg) brightness(91%) contrast(90%);
+        cursor: pointer;
+        display: block;
+    }
+
+    .faq_menu {
+        display: none;
+    }
+
+    .container {
+        background-color: aliceblue;
+        max-width: 600px;
+        margin: 0 auto;
+        border-radius: 15px;
+        padding: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    }
 
     .container,
     form,
-    .allData {
-        padding: 20px;
-    }
+    {
+    padding: 20px;
+}
 
-    .title h2 {
-        font-size: 24px;
-    }
+.title h2 {
+    font-size: 24px;
+}
 
-    .titleData {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .logo_wide {
-        display: none;
-    }
+.logo_wide {
+    display: none;
+}
 }
 
 #bookInfo .book-details {
